@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/AIOStreams/fsmux/compare/fsmux-v0.3.0...fsmux-v0.3.1) (2026-10-28)
+
+
+### Miscellaneous Chores
+
+* publish publicly by default ([31d99ff](https://github.com/AIOStreams/fsmux/commit/31d99ffd7cf5bc428bf7a0a20f42ee09fa6d9189))
+
 ## [0.3.0](https://github.com/Viren070/fsmux/compare/fsmux-v0.2.0...fsmux-v0.3.0) (2026-09-02)
 
 
