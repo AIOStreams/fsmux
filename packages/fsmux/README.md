@@ -1,4 +1,4 @@
-# @viren070/fsmux
+# @aiostreams/fsmux
 
 Serve one filesystem over NFSv4 and WebDAV. Implement six methods, get two
 protocols.
@@ -8,7 +8,7 @@ exist on disk — files whose bytes are fetched on demand or generated work
 exactly the same, because the protocol servers only ever call your methods.
 
 ```sh
-pnpm add @viren070/fsmux   # npm install / yarn add work too
+pnpm add @aiostreams/fsmux   # npm install / yarn add work too
 ```
 
 ## The contract
@@ -44,7 +44,7 @@ Permissions are not what protects the export; refusing the write is.
 ## NFSv4
 
 ```ts
-import { NfsServer } from '@viren070/fsmux';
+import { NfsServer } from '@aiostreams/fsmux';
 
 const nfs = new NfsServer({
   fs,
@@ -71,7 +71,7 @@ them in memory.
 ## WebDAV
 
 ```ts
-import { handleWebdav } from '@viren070/fsmux';
+import { handleWebdav } from '@aiostreams/fsmux';
 
 // A bare http server, an Express route, anything with (req, res).
 app.use('/webdav', (req, res) => handleWebdav(req, res, { fs, base: '/webdav' }));
@@ -103,7 +103,7 @@ cannot resolve it in general.
 ## Testing your implementation
 
 ```ts
-import { MemoryFs, dir, file } from '@viren070/fsmux/testing';
+import { MemoryFs, dir, file } from '@aiostreams/fsmux/testing';
 
 const fs = new MemoryFs({
   movies: dir({ 'a.mkv': file('...') }),
@@ -115,7 +115,7 @@ faithful stand-in for a real implementation.
 
 ## Local mounts
 
-[`@viren070/fsmux-fuse`](https://github.com/Viren070/fsmux/tree/main/packages/fsmux-fuse)
+[`@aiostreams/fsmux-fuse`](https://github.com/AIOStreams/fsmux/tree/main/packages/fsmux-fuse)
 mounts the same `SharedFilesystem` as a directory on the host, with real
 symlinks and no protocol in between. Linux only.
 

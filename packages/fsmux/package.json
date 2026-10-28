@@ -1,5 +1,5 @@
 {
-  "name": "@viren070/fsmux",
+  "name": "@aiostreams/fsmux",
   "version": "0.3.0",
   "description": "Serve one filesystem over NFSv4 and WebDAV. Implement six methods, get two protocols.",
   "keywords": [
@@ -15,12 +15,12 @@
   "author": "Viren070",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Viren070/fsmux.git",
+    "url": "git+https://github.com/AIOStreams/fsmux.git",
     "directory": "packages/fsmux"
   },
-  "homepage": "https://github.com/Viren070/fsmux#readme",
+  "homepage": "https://github.com/AIOStreams/fsmux#readme",
   "bugs": {
-    "url": "https://github.com/Viren070/fsmux/issues"
+    "url": "https://github.com/AIOStreams/fsmux/issues"
   },
   "type": "module",
   "main": "dist/index.js",

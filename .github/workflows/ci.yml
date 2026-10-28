@@ -31,7 +31,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm -F @viren070/fsmux build
+        run: pnpm -F @aiostreams/fsmux build
 
       - name: Typecheck
         run: pnpm typecheck
@@ -40,7 +40,7 @@ jobs:
         run: pnpm format:check
 
       - name: Test
-        run: pnpm -F @viren070/fsmux test
+        run: pnpm -F @aiostreams/fsmux test
 
   # The native half. Only Linux can host a FUSE mount, and the mount tests
   # need /dev/fuse, which GitHub's ubuntu runners provide.
@@ -73,4 +73,4 @@ jobs:
         run: FUSE_NATIVE_REQUIRED=1 pnpm build
 
       - name: Test
-        run: pnpm -F @viren070/fsmux-fuse test
+        run: pnpm -F @aiostreams/fsmux-fuse test

@@ -1,4 +1,4 @@
-import { fsErrorCode } from '@viren070/fsmux';
+import { fsErrorCode } from '@aiostreams/fsmux';
 
 export const ENOENT = 2;
 export const EIO = 5;

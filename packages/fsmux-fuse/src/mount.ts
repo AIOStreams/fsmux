@@ -6,8 +6,8 @@ import {
   type FsFileHandle,
   type FsNode,
   type SharedFilesystem,
-} from '@viren070/fsmux';
-import { releaseBuffer } from '@viren070/fsmux';
+} from '@aiostreams/fsmux';
+import { releaseBuffer } from '@aiostreams/fsmux';
 import { silentLogger, type Logger } from './logger.js';
 import { kindOf, toFuseAttr, KIND_DIR, type AttrOptions } from './attrs.js';
 import { loadNativeBinding, type NativeBinding } from './binding.js';

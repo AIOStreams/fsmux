@@ -1,5 +1,5 @@
 {
-  "name": "@viren070/fsmux-fuse",
+  "name": "@aiostreams/fsmux-fuse",
   "version": "0.3.0",
   "description": "Mount an fsmux filesystem locally through FUSE (Linux; Rust via napi-rs)",
   "keywords": [
@@ -13,12 +13,12 @@
   "author": "Viren070",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Viren070/fsmux.git",
+    "url": "git+https://github.com/AIOStreams/fsmux.git",
     "directory": "packages/fsmux-fuse"
   },
-  "homepage": "https://github.com/Viren070/fsmux/tree/main/packages/fsmux-fuse#readme",
+  "homepage": "https://github.com/AIOStreams/fsmux/tree/main/packages/fsmux-fuse#readme",
   "bugs": {
-    "url": "https://github.com/Viren070/fsmux/issues"
+    "url": "https://github.com/AIOStreams/fsmux/issues"
   },
   "type": "module",
   "main": "dist/index.js",
@@ -49,7 +49,7 @@
     "prepublishOnly": "tsc"
   },
   "dependencies": {
-    "@viren070/fsmux": "workspace:^"
+    "@aiostreams/fsmux": "workspace:^"
   },
   "devDependencies": {
     "@napi-rs/cli": "^3.8.6",

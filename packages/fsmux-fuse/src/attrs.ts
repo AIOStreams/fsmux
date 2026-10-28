@@ -1,4 +1,4 @@
-import type { FsNode } from '@viren070/fsmux';
+import type { FsNode } from '@aiostreams/fsmux';
 import type { FuseAttr } from './native.js';
 
 export const KIND_DIR = 0;

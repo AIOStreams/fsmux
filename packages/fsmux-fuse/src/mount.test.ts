@@ -22,7 +22,12 @@ import os from 'node:os';
 import path from 'node:path';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { after, before, describe, it } from 'node:test';
-import { MemoryFs, dir, file, type MemorySpec } from '@viren070/fsmux/testing';
+import {
+  MemoryFs,
+  dir,
+  file,
+  type MemorySpec,
+} from '@aiostreams/fsmux/testing';
 import { mountSharedFilesystem, type FuseMount } from './mount.js';
 import { probeFuse } from './probe.js';
 
